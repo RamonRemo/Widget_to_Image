@@ -9,7 +9,6 @@ class WidgetToImageController {
   // final Widget widget;
   late ui.Image _imageAsDartUiImage;
   late ByteData? _imageAsByteData;
-  late Image _image;
   late Uint8List? _imageAsUint8list;
   late RenderRepaintBoundary? _boundary;
   final GlobalKey key;
@@ -44,7 +43,7 @@ class WidgetToImageController {
       });
 
       // Wait for the next frame to ensure that the repaint is complete
-      await Future.delayed(Duration(milliseconds: 200));
+      await Future.delayed(const Duration(milliseconds: 200));
 
       // Convert the widget to an image
       _imageAsDartUiImage = await _boundary!.toImage(pixelRatio: 6);
@@ -136,7 +135,7 @@ class WidgetToImageController {
           }
         });
 
-        await Future.delayed(Duration(milliseconds: 200));
+        await Future.delayed(const Duration(milliseconds: 200));
       }
 
       _imageAsDartUiImage = await _boundary!.toImage(pixelRatio: 6);

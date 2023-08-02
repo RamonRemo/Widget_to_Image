@@ -1,7 +1,7 @@
 name: widget_to_image
 description: A new Flutter package project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/RamonRemo/Widget_to_Image
 
 environment:
   sdk: '>=3.0.6 <4.0.0'

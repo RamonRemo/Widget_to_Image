@@ -1,5 +1,3 @@
-import 'dart:typed_data';
-
 import 'package:flutter/material.dart';
 import 'package:widget_to_image/widget_to_image.dart';
 
@@ -52,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final widgetOriginal = Expanded(
       child: Column(
         children: [
-          Text('Widget'),
+          const Text('Widget'),
           RepaintBoundary(
             key: key,
             child: ElevatedButton(
@@ -69,9 +67,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 final inasd = await WidgetToImage.asImage(key);
 
                 print(image2);
-                print(byte is ByteData);
-                print(uint is Uint8List);
-                print(inasd is Image);
+                print(byte);
+                print(uint);
+                print(inasd);
 
                 setState(() {
                   firstColor = !firstColor;
@@ -79,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               child: Container(
                 color: firstColor ? Colors.red : Colors.green,
-                child: Text('Click to change color'),
+                child: const Text('Click to change color'),
               ),
             ),
           )
@@ -95,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Expanded(
               child: Column(
                 children: [
-                  Text('Image'),
+                  const Text('Image'),
                   hasConverted
                       ? Container(
                           height: 35,
