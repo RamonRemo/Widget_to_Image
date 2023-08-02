@@ -11,7 +11,7 @@ environment:
 
 
 dependencies:
-  widget_to_image:
+  convert_widget_to_image:
     path: ../
 
   flutter:

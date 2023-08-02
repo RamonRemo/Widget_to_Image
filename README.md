@@ -1,4 +1,4 @@
-A  simple package who convert widgets to image types;
+A simple package who convert widgets to image types;
 
 ## Features
 
@@ -27,7 +27,7 @@ $ pub get
 3. Import the `widgets_to_image.dart` file in your app
 
 ```dart
-import 'package:widget_to_image/widget_to_image.dart';
+import 'package:convert_widget_to_image/widget_to_image.dart';
 ```
 
 ## Usage

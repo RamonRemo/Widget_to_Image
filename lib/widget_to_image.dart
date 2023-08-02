@@ -4,7 +4,7 @@ export 'widget_to_image.dart';
 
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
-import 'package:widget_to_image/widget_to_image_controller.dart';
+import 'package:convert_widget_to_image/widget_to_image_controller.dart';
 import 'dart:ui' as ui;
 
 class WidgetToImage {
