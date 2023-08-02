@@ -18,13 +18,13 @@ dependencies:
   widget_to_image: any
 ```
 
-1. Get the package using your IDE's GUI or via command line with
+2. Get the package using your IDE's GUI or via command line with
 
 ```bash
 $ pub get
 ```
 
-1. Import the `widgets_to_image.dart` file in your app
+3. Import the `widgets_to_image.dart` file in your app
 
 ```dart
 import 'package:widget_to_image/widget_to_image.dart';
@@ -42,7 +42,7 @@ RepaintBoundary(
     shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12))),
         onPressed: () {},
-        child: Text('Simple Button'),,
+        child: Text('Simple Button'),
     ),
 )
 ```
